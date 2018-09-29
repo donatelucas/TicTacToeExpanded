@@ -23,6 +23,7 @@ _"The system" herein refers to the finished code in conjunction with the softwar
 5.  **Accept player input** During gameplay, the system should allow (prompt?) players to touch/tap/click a cell in the game board grid. When the player touches the board, the system checks to determine if the square is empty or has already been played.
 
 5a. If the square has already been played, the system does not respond.
+
 5b. If the square is empty, the system should:
 
 - provide visual feedback by showing the player's token in the cell that was touched
