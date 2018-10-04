@@ -4,19 +4,22 @@ function startGame() {
 }
 
 function setMessage(message) {
-    document.getElementById("message").innerText = message;
+    document.getElementById("messages").innerText = message;
 }
 
 function printSymbol(tile) {
-    tile.innerText = document.turn;
-    turnControl();
+    if (tile.innerText = ' ') {
+        tile.innerText = document.turn;
+        turnControl();
+    } else {
+        setMessage("Hey, " + document.turn + ", pick another tile.");
+    }
 }
 
 function turnControl() {
     if (document.turn == "X") {
         document.turn = "O";
-    }
-    else {
+    } else {
         document.turn = "X";
     }
 }
