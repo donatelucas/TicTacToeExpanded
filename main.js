@@ -8,7 +8,7 @@ function setMessage(message) {
 }
 
 function printSymbol(tile) {
-    if (tile.innerText = ' ') {
+    if (tile.innerText == '') {
         tile.innerText = document.turn;
         turnControl();
     } else {
