@@ -1,5 +1,10 @@
 function startGame() {
     document.turn = "X";
+    setMessage("It's " + document.turn + "'s turn");
+}
+
+function setMessage(message) {
+    document.getElementById("message").innerText = message;
 }
 
 function printSymbol(tile) {
