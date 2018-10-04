@@ -1,5 +1,6 @@
 function startGame() {
     document.turn = "X";
+    document.winner = null;
     setMessage("It's " + document.turn + "'s turn.");
 }
 
@@ -8,7 +9,9 @@ function setMessage(message) {
 }
 
 function printSymbol(tile) {
-    if (tile.innerText == '') {
+    if (document.winner != null) {
+        setMessage("Do you want to play again?");
+    } else if (tile.innerText == '') {
         tile.innerText = document.turn;
         turnControl();
     } else {
@@ -19,6 +22,7 @@ function printSymbol(tile) {
 function turnControl() {
     if (winnerCheck(document.turn)) {
         setMessage("Congratulations! " + document.turn + " won");
+        document.winner = document.turn;
     }
     else if (document.turn == "X") {
         document.turn = "O";
@@ -54,6 +58,7 @@ function checkRow(a, b, c, move) {
     return flag;
 }
 
+// Check for what is in the tiles, it's a function that extends checkRow
 function getTile(number) {
     return document.getElementById(number).innerText;
 }
