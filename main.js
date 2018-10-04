@@ -12,7 +12,7 @@ function printSymbol(tile) {
         tile.innerText = document.turn;
         turnControl();
     } else {
-        setMessage("Hey, " + document.turn + ", pick another tile.");
+        setMessage("This tile is taken. Still " + document.turn + "'s turn.");
     }
 }
 
@@ -22,4 +22,5 @@ function turnControl() {
     } else {
         document.turn = "X";
     }
+    setMessage("It's " + document.turn + "'s turn"); // Needs to be set again so the message switches when an attempt of illegal move is made
 }
