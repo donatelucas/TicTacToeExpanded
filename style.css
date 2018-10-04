@@ -1,21 +1,40 @@
+body {
+    width: 550px;
+    margin: auto;
+    background-color: #9C89B8;
+}
+
+h1 {
+    font-family: 'Mali';
+    font-size: 62px;
+    color: #F0E6EF;
+}
+
+#messages {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 21px;
+    color: #F0E6EF;
+}
+
 td {
-    border: 25px solid #fcd04e;
-    height: 250px;
-    width: 250px;
+    border: 25px solid #F0A6CA;
+    height: 200px;
+    width: 200px;
     text-align: center;
     vertical-align: middle;
     font-family: "Helvetica", monospace, sans-serif;
-    font-size: 70px;
+    font-size: 150px;
     cursor: pointer;
-    color: blue;
+    color: #B8BEDD;
+}
+
+#tile {
+    color: #EFC3E6;
 }
 
 table {
     border-collapse: collapse;
     position: absolute;
-    left: 25%;
-    margin-left: -155px;
-    top: 50px;
 }
 
 table tr:first-child td {
@@ -34,18 +53,16 @@ table tr td:last-child {
     border-right: 0;
 }
 
-.endgame {
-    display: none;
-    width: 200px;
-    top: 120px;
-    background-color: #f1f1f1;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-size: 2em;
-}
+/*
+    You can try to find one at:
+    https://coolors.co/
+
+    Possible Color Scheme:
+    Link: https://coolors.co/9c89b8-f0a6ca-efc3e6-f0e6ef-b8bedd
+
+    #9C89B8 - Lavender Purple
+    #F0A6CA - Carnation Pink
+    #EFC3E6 - Classic Rose
+    #F0E6EF - Isabelline
+    #B8BEDD - Light Steel Blue
+*/
