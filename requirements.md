@@ -12,7 +12,7 @@ _"The system" herein refers to the finished code in conjunction with the softwar
 
 ### Minimum Requirements
 
-1.  Allow two users, U1 and U2, to take turns
+1.  **Two simultaneous head-to-head players** allow two users, U1 and U2, to take turns playing tic tac toe with the software. U1 will be assigned "X" and the system will display a visual indicator that it is U1's turn to move. Once U1's turn is complete, the system will show a visual indicator that it is U2's turn. This continues, alternating turns between U1 and U2, until the game ends as stipulated in Requirement 7 and Requirement 8.
 
 2.  **Collect usernames:** before beginning play, the system displays a text box with the hint text "Enter Player One Name Here." U1 types their input $NAME into the text box. U1 presses the "READY" button, and the system checks whether input has been entered into the text box. If not, the system provides a visual prompt to remind the user to input text into the box. If input has been entered, the system saves this input as $PlayerOneName and repeats the process for Player Two.
 
@@ -36,18 +36,18 @@ _"The system" herein refers to the finished code in conjunction with the softwar
 
 ### Preferred requirements
 
-1.  **The game should be visual** The system will "be a real application" that has a graphical user interface for playing the game
+10.  **The game should be visual** The system will "be a real application" that has a graphical user interface for playing the game
 
-2.  **Start Screen** The system will have a "start" or "home" screen that displays when first running the software. The user will be required to touch/tap/click the screen (possibly a specific "start" button) in order to progress to the name entry process.
+11.  **Start Screen** The system will have a "start" or "home" screen that displays when first running the software. The user will be required to touch/tap/click the screen (possibly a specific "start" button) in order to progress to the name entry process.
 
-3.  **Blinking "Press Start"** The system will have a message stating "Press Start" on the start screen (dependent on Preferred Requirement #2) that "blinks" by alternating the color in which it is displayed
+  11a.  **Blinking "Press Start"** only if requirement 11 is implemented: The system will have a message stating "Press Start" on the start screen (dependent on Requirement #11) that "blinks" by alternating the color in which it is displayed
 
-4.  **AI Opponent** The system will have the option for a single player to compete against an artificial intelligence opponent, instead of two players competing with one another. Since it is mathematically possible for one player to never allow the other player to win a round, the AI opponent should be programmed to be strategically imperfect such that the human player has a chance to win the round.
+12.  **AI Opponent** The system will have the option for a single player to compete against an artificial intelligence opponent, instead of two players competing with one another. Since it is mathematically possible for one player to never allow the other player to win a round, the AI opponent should be programmed to be strategically imperfect such that the human player has a chance to win the round.
 
-5.  **Display scoreboard** After one round of play, if a rematch is selected, the game should show a "scoreboard" from that point forward. This would indicate the number of wins accrued by each player, visible near the player names during gameplay.
+13.  **Display scoreboard** After one round of play, if a rematch is selected, the game should show a "scoreboard" from that point forward. This would indicate the number of wins accrued by each player, visible near the player names during gameplay.
 
-6.  **Sound** The game should provide audible feedback when players play their turns and when a round is concluded.
+14.  **Sound** The game should provide audible feedback when players play their turns and when a round is concluded.
 
-7.  **Color Selection** In addition to entering their names, players may select a color (from a pre-defined palette?) to represent them. Possible implementations include showing the player's name in that color, or allowing the player's X or O tokens to be drawn in that color.
+15.  **Color Selection** In addition to entering their names, players may select a color (from a pre-defined palette?) to represent them. Possible implementations include showing the player's name in that color, or allowing the player's X or O tokens to be drawn in that color.
 
-8.  **Coin Toss** Before beginning each round, the game conducts a "coin toss" by selecting a random number. Based on the result, player one or player two could begin play on the next round (become "X")
+16.  **Coin Toss** Before beginning each round, the game conducts a "coin toss" by selecting a random number. Based on the result, player one or player two could begin play on the next round (become "X")
