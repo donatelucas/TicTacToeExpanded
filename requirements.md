@@ -51,3 +51,5 @@ _"The system" herein refers to the finished code in conjunction with the softwar
 15.  **Color Selection** In addition to entering their names, players may select a color (from a pre-defined palette?) to represent them. Possible implementations include showing the player's name in that color, or allowing the player's X or O tokens to be drawn in that color.
 
 16.  **Coin Toss** Before beginning each round, the game conducts a "coin toss" by selecting a random number. Based on the result, player one or player two could begin play on the next round (become "X")
+
+17. **Responsive design** The system display automatically resizes according to the size of the viewing screen, allowing gameplay on a wide variety of device form factors
