@@ -15,16 +15,13 @@ h1 {
     text-align: center;
     font-size: 18px;
     color: #F0E6EF;
-<<<<<<< HEAD
     padding-bottom: 50px;
 }
 
 .container {
     margin: 0 auto;
     width: 330px;
-=======
     text-align: center;
->>>>>>> origin/master
 }
 
 td {
@@ -62,6 +59,20 @@ table tr td:first-child {
 
 table tr td:last-child {
     border-right: 0;
+}
+
+#restart {
+    text-align: center;
+    border: none;
+    background: #B8BEDD;
+    color: #F0E6EF;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 360px 2px;
+    border-radius: 2px;
+    padding: 0.6em 1.2em;
+    letter-spacing: 1px;
 }
 
 /*
