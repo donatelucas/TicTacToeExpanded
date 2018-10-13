@@ -1,13 +1,6 @@
-turns = 1;
-
 function startGame() {
-
-    // Loops through the board to restart game
-    for (var i = 1; i <= 9; i++)
-    {
-        clearBoard(i);
-    }
-
+    clearBoard();
+    turns = 1;
     document.turn = "X";
     document.winner = null;
     setMessage(document.turn + "'s turn.");
@@ -15,6 +8,7 @@ function startGame() {
 
 function setMessage(message) {
     document.getElementById("messages").innerText = message;
+    console.log(turns);
 }
 
 function printSymbol(tile) {
@@ -74,11 +68,14 @@ function checkRow(a, b, c, move) {
 
 // Check for what is in the tiles, it's a function that extends checkRow
 function getTile(number) {
-    console.log(turns);
     return document.getElementById(number).innerText;
 }
 
 // Erases the board after match is completed
-function clearBoard(number) {
-    document.getElementById(number).innerText = "";
+function clearBoard() {
+
+    for (var i = 1; i <= 9; i++)
+    {
+        document.getElementById(i).innerText = "";
+    }
 }
