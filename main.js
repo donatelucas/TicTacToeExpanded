@@ -1,7 +1,7 @@
 function startGame() {
     document.turn = "X";
     document.winner = null;
-    setMessage("It's " + document.turn + "'s turn.");
+    setMessage(document.turn + "'s turn.");
 }
 
 function setMessage(message) {
@@ -26,10 +26,10 @@ function turnControl() {
     }
     else if (document.turn == "X") {
         document.turn = "O";
-        setMessage("It's " + document.turn + "'s turn.");
+        setMessage(document.turn + "'s turn.");
     } else {
         document.turn = "X";
-        setMessage("It's " + document.turn + "'s turn."); // Needs to be set again so the message switches when an attempt of illegal move is made
+        setMessage(document.turn + "'s turn."); // Needs to be set again so the message switches when an attempt of illegal move is made
     }
 }
 

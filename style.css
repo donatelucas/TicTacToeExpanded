@@ -1,29 +1,33 @@
 body {
-    width: 550px;
-    margin: auto;
     background-color: #9C89B8;
 }
 
 h1 {
     font-family: 'Mali';
-    font-size: 62px;
+    text-align: center;
+    font-size: 48px;
     color: #F0E6EF;
 }
 
 #messages {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 21px;
+    text-align: center;
+    font-size: 18px;
     color: #F0E6EF;
+    padding-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 330px;
 }
 
 td {
-    border: 25px solid #F0A6CA;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    vertical-align: middle;
+    border: 15px solid #F0A6CA;
+    height: 100px;
+    width: 100px;
     font-family: "Helvetica", monospace, sans-serif;
-    font-size: 150px;
+    font-size: 68px;
     cursor: pointer;
     color: #B8BEDD;
 }
@@ -36,6 +40,7 @@ td {
 table {
     border-collapse: collapse;
     position: absolute;
+    text-align: center;
 }
 
 table tr:first-child td {
