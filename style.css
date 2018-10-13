@@ -7,6 +7,7 @@ h1 {
     text-align: center;
     font-size: 48px;
     color: #F0E6EF;
+    text-align: center;
 }
 
 #messages {
@@ -14,12 +15,16 @@ h1 {
     text-align: center;
     font-size: 18px;
     color: #F0E6EF;
+<<<<<<< HEAD
     padding-bottom: 50px;
 }
 
 .container {
     margin: 0 auto;
     width: 330px;
+=======
+    text-align: center;
+>>>>>>> origin/master
 }
 
 td {
