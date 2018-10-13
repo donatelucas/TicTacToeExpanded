@@ -1,14 +1,34 @@
+matches = 0;
+
 function startGame() {
     clearBoard();
+    matchCount();
     turns = 1;
-    document.turn = "X";
+    document.turn = userX;
     document.winner = null;
     setMessage(document.turn + "'s turn.");
 }
 
+function matchCount() {
+    if (matches < 1) {
+        setUsername();
+    }
+    matches++;
+}
+
+function setUsername() {
+    userX = prompt("Player 1: please add your username");
+    userO = prompt("Player 2: please add your username");
+
+    if (userX == null || userO == null)
+    {
+        userX = "X";
+        userO = "O";
+    }
+}
+
 function setMessage(message) {
     document.getElementById("messages").innerText = message;
-    console.log(turns);
 }
 
 function printSymbol(tile) {
@@ -17,7 +37,7 @@ function printSymbol(tile) {
     } else if (tile.innerText == '') {
         tile.innerText = document.turn;
         turnControl();
-    } else {
+    } else if (document.winner = null && turns < 9) {
         setMessage("This tile is taken. Still " + document.turn + "'s turn.");
     }
 }
@@ -30,12 +50,12 @@ function turnControl() {
     else if (!winnerCheck(document.turn) && turns >= 9) {
         setMessage("Wow, much skills, many draws. Do you want to play again?");
     }
-    else if (document.turn == "X") {
-        document.turn = "O";
+    else if (document.turn == userX) {
+        document.turn = userO;
         setMessage(document.turn + "'s turn.");
         turns++;
     } else {
-        document.turn = "X";
+        document.turn = userX;
         setMessage(document.turn + "'s turn."); // Needs to be set again so the message switches when an attempt of illegal move is made
         turns++;
     }
@@ -73,7 +93,6 @@ function getTile(number) {
 
 // Erases the board after match is completed
 function clearBoard() {
-
     for (var i = 1; i <= 9; i++)
     {
         document.getElementById(i).innerText = "";
