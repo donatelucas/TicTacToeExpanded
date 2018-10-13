@@ -1,4 +1,13 @@
+turns = 1;
+
 function startGame() {
+
+    // Loops through the board to restart game
+    for (var i = 1; i <= 9; i++)
+    {
+        clearBoard(i);
+    }
+
     document.turn = "X";
     document.winner = null;
     setMessage(document.turn + "'s turn.");
@@ -24,12 +33,17 @@ function turnControl() {
         setMessage("Congratulations! " + document.turn + " won");
         document.winner = document.turn;
     }
+    else if (!winnerCheck(document.turn) && turns >= 9) {
+        setMessage("Wow, much skills, many draws. Do you want to play again?");
+    }
     else if (document.turn == "X") {
         document.turn = "O";
         setMessage(document.turn + "'s turn.");
+        turns++;
     } else {
         document.turn = "X";
         setMessage(document.turn + "'s turn."); // Needs to be set again so the message switches when an attempt of illegal move is made
+        turns++;
     }
 }
 
@@ -60,5 +74,11 @@ function checkRow(a, b, c, move) {
 
 // Check for what is in the tiles, it's a function that extends checkRow
 function getTile(number) {
+    console.log(turns);
     return document.getElementById(number).innerText;
+}
+
+// Erases the board after match is completed
+function clearBoard(number) {
+    document.getElementById(number).innerText = "";
 }
