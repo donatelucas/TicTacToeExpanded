@@ -9,27 +9,32 @@
         @import url('https://fonts.googleapis.com/css?family=Mali|Roboto+Condensed|Indie+Flower');
     </style>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <body onload="startGame();">
-        <h1> Tic Tac Toe </h1>
-        <div id = "messages"> Messages here </div>
-        <script src="main.js"></script>
-            <table>
-                <tr>
-                    <td class="tile" id="1" onClick= "printSymbol(this)"></td>
-                    <td class="tile" id="2" onClick= "printSymbol(this)"></td>
-                    <td class="tile" id="3" onClick= "printSymbol(this)"></td>
-                </tr>
-                <tr>
-                    <td class="tile" id="4" onClick= "printSymbol(this)"></td>
-                    <td class="tile" id="5" onClick= "printSymbol(this)"></td>
-                    <td class="tile" id="6" onClick= "printSymbol(this)"></td>
-                </tr>
-                <tr>
-                    <td class="tile" id="7" onClick= "printSymbol(this)"></td>
-                    <td class="tile" id="8" onClick= "printSymbol(this)"></td>
-                    <td class="tile" id="9" onClick= "printSymbol(this)"></td>
-                </tr>
-            </table>
-            <script src="main.js"></script>
+        <div class = "container">
+
+            <h1> Tic Tac Toe </h1>
+            <div id = "messages"> Messages here </div>
+                <table>
+                    <tr>
+                        <td class="tile" id="1" onClick= "printSymbol(this)"></td>
+                        <td class="tile" id="2" onClick= "printSymbol(this)"></td>
+                        <td class="tile" id="3" onClick= "printSymbol(this)"></td>
+                    </tr>
+                    <tr>
+                        <td class="tile" id="4" onClick= "printSymbol(this)"></td>
+                        <td class="tile" id="5" onClick= "printSymbol(this)"></td>
+                        <td class="tile" id="6" onClick= "printSymbol(this)"></td>
+                    </tr>
+                    <tr>
+                        <td class="tile" id="7" onClick= "printSymbol(this)"></td>
+                        <td class="tile" id="8" onClick= "printSymbol(this)"></td>
+                        <td class="tile" id="9" onClick= "printSymbol(this)"></td>
+                    </tr>
+                </table>
+
+                <script src="main.js"></script>
+        </div>
     </body>
 </html>
