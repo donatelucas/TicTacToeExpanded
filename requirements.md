@@ -53,3 +53,5 @@ _"The system" herein refers to the finished code in conjunction with the softwar
 16.  **Coin Toss** Before beginning each round, the game conducts a "coin toss" by selecting a random number. Based on the result, player one or player two could begin play on the next round (become "X")
 
 17. **Responsive design** The system display automatically resizes according to the size of the viewing screen, allowing gameplay on a wide variety of device form factors
+
+18. **Fetching usernames just once** It's annoying to keep entering usernames or cancelling it every single match. Thus, fetching it only once and keep using it so players can keep playing without being bothered by that is a huge plus. The game will just prompt for usernames at the very first match, and then not anymore.
