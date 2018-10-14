@@ -21,7 +21,7 @@ Tic Tac Toe expanded is built with HTML, CSS, and JavaScript, and should run on 
 
 ## Authors
 
-- **Lucas Perez**
-- **Taryn Chovan**
-- **Faris Jaleel**
-- **Tyler Monaghan**
+- Lucas Perez
+- Taryn Chovan
+- Faris Jaleel
+- Tyler Monaghan
