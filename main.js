@@ -33,7 +33,7 @@ function setMessage(message) {
 
 function printSymbol(tile) {
     if (document.winner != null) {
-        setMessage("Do you want to play again?");
+        setMessage(document.turn + " won. " + "Do you want to play again?");
     } else if (tile.innerText == '') {
         tile.innerText = document.turn;
         turnControl();
@@ -44,7 +44,7 @@ function printSymbol(tile) {
 
 function turnControl() {
     if (winnerCheck(document.turn)) {
-        setMessage("Congratulations! " + document.turn + " won");
+        setMessage("Congratulations! " + document.turn + " won.");
         document.winner = document.turn;
     }
     else if (!winnerCheck(document.turn) && turns >= 9) {
