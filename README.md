@@ -1,6 +1,10 @@
 # Tic Tac Toe Expanded
 
-Project 2 for COMP-330, Team "Jupiter's Moons"
+A Loyola University Chicago project for COMP 330.
+
+## Tech
+
+It's a simple stack. Javascript, HTML, CSS. Nothing fancy.
 
 ## Getting Started
 
@@ -25,3 +29,7 @@ Tic Tac Toe expanded is built with HTML, CSS, and JavaScript, and should run on 
 - Taryn Chovan
 - Faris Jaleel
 - Tyler Monaghan
+
+## License
+
+MIT License. Have fun!
