@@ -21,7 +21,7 @@ Tic Tac Toe expanded is built with HTML, CSS, and JavaScript, and should run on 
 - Color Selection
 - Coin Toss
 - Responsive Design ✔
-- Fetching usernames just once
+- Fetching usernames just once ✔
 
 ## Authors
 
