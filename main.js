@@ -72,7 +72,7 @@ function observer(){
 
     /* The observer checks if there's a winner, if there is, this message won't be
     printed, but the one from resultDisplay() instead */
-    if (document.winner == null) {
+    if (document.winner == null && turns < 9) {
         setMessage(document.player + "'s turn.");
     }
 }
@@ -82,8 +82,8 @@ function resultDisplay() {
         document.winner = document.player;
         setMessage("Congratulations! " + document.winner + " won.");
         console.log("Winner is: " + document.player);
-    } else if (turns >= 9) {
-        setMessage("Wow, much skills, many draws. Do you want to play again?");
+    } else if (!winnerCheck(document.symbol) && turns >= 10) {
+        setMessage ("Wow, much skills, many draws. Do you want to play again?");
     }
 }
 
