@@ -2,6 +2,8 @@
 
 A Loyola University Chicago project for COMP 330.
 
+![This is a TicTacToe](https://github.com/donatelucas/TicTacToeExpanded/blob/master/TicTacToe.png)
+
 ## Tech
 
 It's a simple stack. Javascript, HTML, CSS. Nothing fancy.
