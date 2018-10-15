@@ -16,7 +16,7 @@ document.player = null;
 document.winner = null;
 player1 = null;
 player2 = null;
-matches = 0;
+matches = 1;
 
 function startReset() {
     clearBoard();
@@ -28,7 +28,7 @@ function startReset() {
 
 function matchCount() {
     console.log("Match is " + matches);
-    if (matches < 1) {
+    if (matches < 2) {
         setUsername();
     }
 }
@@ -82,7 +82,7 @@ function resultDisplay() {
         document.winner = document.player;
         setMessage("Congratulations! " + document.winner + " won.");
         console.log("Winner is: " + document.player);
-    } else if (!winnerCheck(document.symbol) && turns >= 9) {
+    } else if (turns >= 9) {
         setMessage("Wow, much skills, many draws. Do you want to play again?");
     }
 }
