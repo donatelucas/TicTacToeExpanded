@@ -54,7 +54,7 @@ function matchCount() {
 function setUsername() {
     player1 = prompt("Player 1: please add your username");
     player2 = prompt("Player 2: please add your username");
-    if (player1 == null || player2 == null)
+    if (player1 == null || player2 == null || player1 == "" || player2 == "")
     {
         player1 = "X";
         player2 = "O";
