@@ -18,6 +18,24 @@ player1 = null;
 player2 = null;
 matches = 1;
 
+function start() {
+  var firstName = document.getElementById('firstPlayer').value;
+  var secondName = document.getElementById('secondPlayer').value;
+    if (firstName === "" || secondName === "") {
+      alert("Please Enter Both Player Names Before Starting");
+    } else {
+        document.getElementsByClassName('start-container')[0].style.display = 'none';
+        document.getElementsByClassName('game-container')[0].style.display = 'block';
+        document.getElementById('player1Name').textContent = firstName;
+        document.getElementById('player2Name').textContent = secondName;
+        startGame();
+
+    }
+
+}
+
+
+
 function startReset() {
     clearBoard();
     turns = 1;
@@ -43,11 +61,20 @@ function setUsername() {
     }
 }
 
+function random() {
+  return Math.round(Math.random());
+  //This will generate numbers between 0-1 & round them so result is either 0 or 1
+}
+
+
+
 function setMessage(message) {
     document.getElementById("messages").innerText = message;
 }
 
 function printSymbol(tile) {
+    var audio = new Audio('sounds/click-on.mp3');
+    audio.play();
     if (document.winner != null) {
         setMessage(document.winner + " won. " + "Do you want to play again?");
     } else if (tile.innerText == '') {
