@@ -14,8 +14,7 @@
 document.symbol = null;
 document.player = null;
 document.winner = null;
-player1 = null;
-player2 = null;
+
 
 function start() {
   var firstName = document.getElementById('firstPlayer').value;
@@ -90,6 +89,20 @@ function observer(){
 
 function resultDisplay() {
     if (winnerCheck(document.symbol)) {
+      //Detecting who won and will add to scoreboard
+      if (document.symbol == "X") {
+  			if (document.player1IsX) {
+  				document.getElementById("player1Score").innerText = parseInt(document.getElementById("player1Score").innerText) + 1;
+  			} else {
+  				document.getElementById("player2Score").innerText = parseInt(document.getElementById("player2Score").innerText) + 1;
+  			}
+  		} else {
+  			if (document.player1IsX) {
+  				document.getElementById("player2Score").innerText = parseInt(document.getElementById("player2Score").innerText) + 1;
+  			} else {
+  				document.getElementById("player1Score").innerText = parseInt(document.getElementById("player1Score").innerText) + 1;
+  			}
+  		}		
         document.winner = document.player;
         setMessage("Congratulations! " + document.winner + " won.");
         console.log("Winner is: " + document.player);
