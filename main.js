@@ -16,7 +16,6 @@ document.player = null;
 document.winner = null;
 player1 = null;
 player2 = null;
-matches = 1;
 
 function start() {
   var firstName = document.getElementById('firstPlayer').value;
@@ -76,10 +75,10 @@ function observer(){
     resultDisplay();
     if (turns % 2 > 0) {
         document.symbol = "X";
-        document.player = player1;
+        document.player = document.xName;
     } else {
         document.symbol = "O";
-        document.player = player2;
+        document.player = document.oName;
     }
 
     /* The observer checks if there's a winner, if there is, this message won't be
