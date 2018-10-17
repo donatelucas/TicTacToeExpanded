@@ -16,12 +16,12 @@ Tic Tac Toe expanded is built with HTML, CSS, and JavaScript, and should run on 
 
 - The game should be visual ✔
 - Start Screen
-- Blinking Press Start and/or button Press Start
+- Blinking Press Start and/or button Press Start ✔
 - AI Opponent
-- Scoreboard
-- Sound
+- Scoreboard ✔
+- Sound ✔
 - Color Selection
-- Coin Toss
+- Coin Toss ✔
 - Responsive Design ✔
 - Fetching usernames just once ✔
 
