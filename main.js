@@ -36,7 +36,16 @@ function startReset() {
     clearBoard();
     turns = 1;
     observer();
-    matches++;
+      if (random()) {
+          document.player1IsX = true;
+          document.xName = document.getElementById('player1Name').textContent;
+          document.oName = document.getElementById('player2Name').textContent;
+      } else {
+          document.player1IsX = false;
+          document.xName = document.getElementById('player2Name').textContent;
+          document.oName = document.getElementById('player1Name').textContent;
+      }
+    setMessage(document.xName + "'s turn.'");
 }
 
 function random() {
