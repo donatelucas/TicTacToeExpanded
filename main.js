@@ -28,45 +28,21 @@ function start() {
         document.getElementsByClassName('game-container')[0].style.display = 'block';
         document.getElementById('player1Name').textContent = firstName;
         document.getElementById('player2Name').textContent = secondName;
-        startGame();
-
+        startReset();
     }
-
 }
-
-
 
 function startReset() {
     clearBoard();
     turns = 1;
-    matchCount();
     observer();
     matches++;
-}
-
-function matchCount() {
-    console.log("Match is " + matches);
-    if (matches < 2) {
-        setUsername();
-    }
-}
-
-function setUsername() {
-    player1 = prompt("Player 1: please add your username");
-    player2 = prompt("Player 2: please add your username");
-    if (player1 == null || player2 == null || player1 == "" || player2 == "")
-    {
-        player1 = "X";
-        player2 = "O";
-    }
 }
 
 function random() {
   return Math.round(Math.random());
   //This will generate numbers between 0-1 & round them so result is either 0 or 1
 }
-
-
 
 function setMessage(message) {
     document.getElementById("messages").innerText = message;
