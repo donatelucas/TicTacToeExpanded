@@ -18,7 +18,7 @@ h1 {
     padding-bottom: 50px;
 }
 
-.container {
+.start.container {
     margin: 0 auto;
     width: 330px;
     text-align: center;
@@ -81,7 +81,7 @@ table tr td:last-child {
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    margin: 360px 2px;
+    margin-top: 20px;
     border-radius: 2px;
     padding: 0.6em 1.2em;
     letter-spacing: 1px;
@@ -101,6 +101,15 @@ table tr td:last-child {
   25%{        color: #DAA520;   }
   50%{        color: #FF00FF;   }
   75%{        color: #fff;   }
+}
+
+#scoreboard {
+  margin-top: 360px;
+  text-align: center;
+}
+
+.playerScore {
+  clear: both;
 }
 
 /*
