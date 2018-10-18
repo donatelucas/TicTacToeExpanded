@@ -91,7 +91,6 @@ function observer(){
 
 function resultDisplay() {
     if (winnerCheck(document.symbol)) {
-<<<<<<< HEAD
       //Detecting who won and will add to scoreboard
       if (document.symbol == "X") {
   			if (document.player1IsX) {
@@ -106,9 +105,7 @@ function resultDisplay() {
   				document.getElementById("player1Score").innerText = parseInt(document.getElementById("player1Score").innerText) + 1;
   			}
   		}
-=======
         updateScoreboard();
->>>>>>> f2d034d6167152bb69c4d175d135169f2c914e54
         document.winner = document.player;
         setMessage("Congratulations! " + document.winner + " won.");
         console.log("Winner is: " + document.player);
