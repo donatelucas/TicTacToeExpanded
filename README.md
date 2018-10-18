@@ -2,7 +2,8 @@
 
 A Loyola University Chicago project for COMP 330.
 
-![This is a TicTacToe](https://github.com/donatelucas/TicTacToeExpanded/blob/master/TicTacToe.png)
+![This is a TicTacToe](https://github.com/donatelucas/TicTacToeExpanded/blob/master/StartingPage.png)
+![This is a TicTacToe](https://github.com/donatelucas/TicTacToeExpanded/blob/master/MainPage.png)
 
 ## Tech
 
