@@ -14,11 +14,13 @@
 document.symbol = null;
 document.player = null;
 document.winner = null;
+const TOTAL_TURNS = 9;
+const MAXIMUM_TURNS = 10;
 
 
 function start() {
-  var firstName = document.getElementById('firstPlayer').value;
-  var secondName = document.getElementById('secondPlayer').value;
+  var firstName = document.getElementById('player1').value;
+  var secondName = document.getElementById('player2').value;
     if (firstName === "" || secondName === "") {
       alert("Please Enter Both Player Names Before Starting");
     } else {
@@ -43,7 +45,7 @@ function startReset() {
           document.xName = document.getElementById('player2Name').textContent;
           document.oName = document.getElementById('player1Name').textContent;
       }
-    setMessage(document.xName + "'s turn.'");
+    setMessage(document.xName + "'s turn.");
 }
 
 function random() {
@@ -64,7 +66,7 @@ function printSymbol(tile) {
         tile.innerText = document.symbol;
         turns++;
         observer();
-    } else if (document.winner == null && turns < 9) {
+    } else if (document.winner == null && turns < TOTAL_TURNS) {
         setMessage("This tile is taken. Still " + document.player + "'s turn.");
     }
 }
@@ -82,7 +84,7 @@ function observer(){
 
     /* The observer checks if there's a winner, if there is, this message won't be
     printed, but the one from resultDisplay() instead */
-    if (document.winner == null && turns < 9) {
+    if (document.winner == null && turns < TOTAL_TURNS) {
         setMessage(document.player + "'s turn.");
     }
 }
@@ -102,11 +104,11 @@ function resultDisplay() {
   			} else {
   				document.getElementById("player1Score").innerText = parseInt(document.getElementById("player1Score").innerText) + 1;
   			}
-  		}		
+  		}
         document.winner = document.player;
         setMessage("Congratulations! " + document.winner + " won.");
         console.log("Winner is: " + document.player);
-    } else if (!winnerCheck(document.symbol) && turns >= 10) {
+    } else if (!winnerCheck(document.symbol) && turns >= MAXIMUM_TURNS) {
         setMessage ("Wow, much skills, many draws. Do you want to play again?");
     }
 }

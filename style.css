@@ -18,18 +18,63 @@ h1 {
     padding-bottom: 50px;
 }
 
-.start.container {
+.press-start {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #F0E6EF;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#scoreboard {
+    margin-top: 360px;
+    text-align: center;
+}
+
+.player1 {
+    font-family: 'Mali';
+    text-align: center;
+    font-size: 18px;
+    color: #F0E6EF;
+    text-align: center;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.player2 {
+    font-family: 'Mali';
+    text-align: center;
+    font-size: 18px;
+    color: #F0E6EF;
+    text-align: center;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.playerScore {
+    font-family: 'Mali';
+    color: #F0E6EF;
+    font-size: 18px;
+    clear: both;
+    text-align: left;
+}
+
+.start-container {
     margin: 0 auto;
-    width: 330px;
+    width: 400px;
     text-align: center;
     display: block;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .game-container {
-  margin: 0 auto;
-  width: 330px;
-  text-align: center;
-  display: none;
+    margin: 0 auto;
+    width: 330px;
+    text-align: center;
+    display: none;
 }
 
 td {
@@ -48,7 +93,13 @@ td {
 }
 
 input {
-  float: right;
+    float: right;
+    border-radius: 5px;
+    font-family: 'Mali';
+    font-size: 18px;
+    background: #F0A6CA;
+    border: none;
+    color: #F0E6EF;
 }
 
 table {
@@ -73,7 +124,7 @@ table tr td:last-child {
     border-right: 0;
 }
 
-#restart, #start{
+#start {
     text-align: center;
     border: none;
     background: #B8BEDD;
@@ -87,29 +138,18 @@ table tr td:last-child {
     letter-spacing: 1px;
 }
 
-.press-start {
-  display: block;
-  font-size: 24px
-  margin-bottom: 10px;
-}
-
-.blinking {
-  animation:blinkingText 0.8s infinite;
-}
-@@keyframes blinkingText {
-  0%{        color: #000;   }
-  25%{        color: #DAA520;   }
-  50%{        color: #FF00FF;   }
-  75%{        color: #fff;   }
-}
-
-#scoreboard {
-  margin-top: 360px;
-  text-align: center;
-}
-
-.playerScore {
-  clear: both;
+#restart {
+    text-align: center;
+    border: none;
+    background: #B8BEDD;
+    color: #F0E6EF;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 0.6em 1.2em;
+    letter-spacing: 1px;
 }
 
 /*

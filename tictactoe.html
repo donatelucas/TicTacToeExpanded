@@ -14,17 +14,17 @@
     <body>
 		<embed name="background-music" src="sounds/background-music.mp3" loop="true" hidden="true" autostart="true">
 		<div class = "start-container">
-			<span class="blinking press-start">Please Enter Player Names and Press Start</span>
-			<div>
-				First Player:
-				<input type="text" id="firstPlayer">
+			<span class="press-start">Enter Player Names and PRESS START!</span>
+			<div class = "player1">
+				Player #1
+				<input type="text" id="player1">
 			</div>
-			<br>
-			<div>
-				Second Player:
-				<input type="text" id="secondPlayer">
+
+			<div class = "player2">
+				Player #2
+				<input type="text" id="player2">
 			</div>
-			<button id="start" onclick="start();"> Start </button>
+			<button id="start" onclick="start();"> Press Start </button>
 		</div>
         <div class = "game-container">
 
@@ -49,12 +49,12 @@
 			</table>
 
 			<div id="scoreboard">
-				Scoreboard:
+
 				<div class="playerScore">
-					<span id="player1Name"></span>:<span id="player1Score">0</span>
+					<span id="player1Name"></span>:<span id="player1Score"> 0</span>
 				</div>
 				<div class="playerScore">
-					<span id="player2Name"></span>:<span id="player2Score">0</span>
+					<span id="player2Name"></span>:<span id="player2Score"> 0</span>
 				</div>
 			</div>
 			<button id="restart" onclick="startReset();"> Restart Game </button>
