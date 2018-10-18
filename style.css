@@ -31,17 +31,7 @@ h1 {
     text-align: center;
 }
 
-.player1 {
-    font-family: 'Mali';
-    text-align: center;
-    font-size: 18px;
-    color: #F0E6EF;
-    text-align: center;
-    padding: 10px 30px;
-    text-transform: uppercase;
-}
-
-.player2 {
+.player1, .player2 {
     font-family: 'Mali';
     text-align: center;
     font-size: 18px;
@@ -124,21 +114,7 @@ table tr td:last-child {
     border-right: 0;
 }
 
-#start {
-    text-align: center;
-    border: none;
-    background: #B8BEDD;
-    color: #F0E6EF;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 0.6em 1.2em;
-    letter-spacing: 1px;
-}
-
-#restart {
+#start, #restart {
     text-align: center;
     border: none;
     background: #B8BEDD;
